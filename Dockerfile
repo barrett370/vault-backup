@@ -1,6 +1,6 @@
 FROM google/cloud-sdk
 
-ENV creds
+ENV creds ""
 
 RUN apt install -y cron
 RUN systemctl enable cron

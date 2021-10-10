@@ -12,5 +12,4 @@ RUN chmod 0644 /etc/cron.d/copy-cron
 RUN crontab /etc/cron.d/copy-cron
 RUN touch /var/log/cron.log
 
-CMD cron && tail -f /var/log/cron.log
-CMD /startup.sh
+ENTRYPOINT [ "/startup.sh" ]

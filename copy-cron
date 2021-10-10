@@ -1,0 +1,1 @@
+* * 1 * * gsutil cp -r /vault gs://warden-backup >/dev/null 2>&1

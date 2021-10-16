@@ -1,9 +1,7 @@
 FROM google/cloud-sdk
 
-ENV creds ""
-
 RUN apt install -y cron
-RUN systemctl enable cron
+RUN service cron start
 
 COPY copy-cron /etc/cron.d/copy-cron
 COPY startup.sh /startup.sh

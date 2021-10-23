@@ -1,4 +1,4 @@
-FROM google/cloud-sdk
+FROM google/cloud-sdk:alpine
 
 RUN apt install -y cron
 RUN service cron start

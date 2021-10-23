@@ -1,6 +1,6 @@
 FROM google/cloud-sdk:alpine
 
-RUN apt install -y cron
+# RUN apt install -y cron
 RUN service cron start
 
 COPY copy-cron /etc/cron.d/copy-cron

@@ -1,1 +1,1 @@
-* * 1 * * gsutil -m cp -r /vault gs://warden-backup
+* * 1 * * gsutil -m cp -r /vault gs://warden-backup >> /var/log/copy.log
